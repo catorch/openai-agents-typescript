@@ -1,0 +1,45 @@
+{
+  "name": "openai-agents-typescript",
+  "version": "0.1.0",
+  "description": "TypeScript port of OpenAI Agents library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch ./index.ts",
+    "test": "jest",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\" \"examples/**/*.ts\"",
+    "prepare": "npm run build",
+    "example:hello": "tsx examples/hello_world.ts",
+    "example:computer": "tsx examples/computer_example.ts",
+    "example:async-computer": "tsx examples/async_computer_example.ts",
+    "example:handoff": "tsx examples/handoff_example.ts",
+    "example:openai-models": "tsx examples/openai_models_example.ts"
+  },
+  "keywords": [
+    "openai",
+    "agents",
+    "ai",
+    "llm",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "openai": "^4.28.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.10.5",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.1.1",
+    "ts-jest": "^29.1.1",
+    "tsx": "^4.19.1",
+    "typescript": "^5.3.3"
+  }
+}
